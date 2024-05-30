@@ -1,9 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-top: 2rem;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
 }
 
@@ -77,7 +77,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .center::before {
@@ -226,4 +226,19 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.mainnav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mainnav ul li{
+  margin: 0 24px;
+  list-style: none;
+  font-weight: bold;
 }
