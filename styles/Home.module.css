@@ -232,13 +232,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
   margin: 0;
   list-style: none;
+  padding-top: 15px;
 }
 
 .mainnav ul li{
   margin: 0 24px;
   list-style: none;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.myImg{
+  border-radius: 10px;
+}
+
+.imgWrap{
+  padding: 20px;
 }

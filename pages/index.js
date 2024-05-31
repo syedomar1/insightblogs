@@ -11,13 +11,16 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-    {/* <style jsx>
+    <style jsx>
       {`
-      .mySpan{
-        background-color: red;
+      h2{
+        font-size:38px;
+      }
+      h3{
+        font-size:28px;
       }
       `}
-    </style> */}
+    </style>
     {/* <Dummy/> */}
       <Head>
         <title>Insight Blogs</title>
@@ -29,23 +32,17 @@ export default function Home() {
       <Script src='' strategy="lazyOnload">
         
       </Script>
-      <nav className={styles.mainnav}>
-        <ul>
-          <Link href='/'><li>Home</li></Link>
-          <Link href='/about'><li>About</li></Link>
-          <Link href='/blog'><li>Blogs</li></Link>
-          <Link href='/contact'><li>Contact</li></Link>
-        </ul>
-      </nav>
+      
       <main className={`${styles.main}`}>
-        <div className={styles.center}>
           <h1>Insights Blogs</h1>
+        <div className={styles.imgWrap}>
+          <Image className={styles.myImg} src="/home.jpg" alt="Homeimg" width={237} height={158}/>
         </div>
           <p>
             A blog for coders from a coder
           </p>
-        <div className="blogs">
-        <h2>Popular Blogs</h2>
+        <div>
+        <h2>Latest Blogs</h2>
           <div className="blogItem">
             <h3>How to learn JavaScript in 2024?</h3>
             <p>JavaScript is the language used to design logic for the web</p>

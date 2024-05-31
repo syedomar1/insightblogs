@@ -1,20 +1,20 @@
-import React from 'react'
+// import React from 'react'
 
-const Dummy = () => {
-  return (
-    <>
-    <style jsx global>
-        {`
-            div{
-                color: red;
-            }
-            `}
-    </style>
-    <div>
-      I am dummy
-    </div>
-    </>
-  )
-}
+// const Dummy = () => {
+//   return (
+//     <>
+//     <style jsx global>
+//         {`
+//             div{
+//                 color: red;
+//             }
+//             `}
+//     </style>
+//     <div>
+//       I am dummy
+//     </div>
+//     </>
+//   )
+// }
 
-export default Dummy
+// export default Dummy
