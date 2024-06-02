@@ -1,5 +1,6 @@
 {
     "title":"How to learn React.js",
     "content":"React is a JavaScript library for building user interfaces (UIs) on the web. React is a declarative, component based library that allows developers to build reusable UI components and It follows the Virtual DOM (Document Object Model) approach, which optimizes rendering performance by minimizing DOM updates. React is fast and works well with other tools and libraries.",
-    "author":"Syed Omar"
+    "author":"Syed Omar",
+    "slug":"how-to-learn-react.js"
 }

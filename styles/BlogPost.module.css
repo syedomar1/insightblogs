@@ -6,3 +6,7 @@
     align-items: center;
     min-height: 100vh;
   }
+
+  .container {
+    padding: 0 22rem;
+  }
