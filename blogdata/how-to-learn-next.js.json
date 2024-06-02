@@ -1,6 +1,7 @@
 {
     "title":"How to learn Next.js",
     "content":"Next.js is an open-source web development framework based on React and has gained significant popularity due to its amazing features. It is developed by Vercel and Next.js stands out for its robust capabilities, including server-side rendering(SSR) and enhanced search engine optimization (SEO). Next.js provides built-in routing, making it simple to create dynamic routes and handle navigation within your application.",
+    "metadesc":"Next.js is an open-source web development framework based on React and has gained significant popularity due to its amazing features. It is developed by Vercel and Next.js stands out for its robust capabilities, including server-side rendering(SSR) and enhanced search engine optimization (SEO). Next.js provides built-in routing, making it simple to create dynamic routes and handle navigation within your application.",
     "author":"Syed Omar",
     "slug":"how-to-learn-next.js"
 }

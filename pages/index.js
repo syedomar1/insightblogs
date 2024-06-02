@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Script from "next/script";
-import Image from "next/image";
+// import Image from "next/image"; 
 import Link from 'next/link';
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
@@ -29,14 +29,15 @@ export default function Home() {
         <meta name="keywords" content="Next.js, InsightBlogs, coder" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Script src='' strategy="lazyOnload">
+      <Script id="exapmple-inline-script" src='' strategy="lazyOnload">
         
       </Script>
       
       <main className={`${styles.main}`}>
           <h1>Insights Blogs</h1>
         <div className={styles.imgWrap}>
-          <Image className={styles.myImg} src="/home.jpg" alt="Homeimg" width={237} height={158}/>
+          {/* <Image className={styles.myImg} src="/home.jpg" alt="Homeimg" width={237} height={158}/> */}
+          <img className={styles.myImg} src="/home.jpg" alt="HomeImg" width={237} height={158}/>
         </div>
           <p>
             A blog for coders from a coder
