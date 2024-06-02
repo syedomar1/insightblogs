@@ -2,6 +2,8 @@ import React from 'react'
 import styles from "@/styles/Blog.module.css";
 import Link from 'next/link';
 
+// Collect all the files from blogdata directory
+// Iterate through them and display
 
 const Blog = () => {
   return (
