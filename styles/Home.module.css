@@ -4,7 +4,8 @@
   justify-content: flex-start;
   padding-top: 2rem;
   align-items: center;
-  min-height: 100vh;
+  max-width: 100vw;
+  font-size: 1rem;
 }
 
 .description {
@@ -245,9 +246,37 @@
 }
 
 .myImg{
-  border-radius: 10px;
+  width: 240px;
+  border-radius:30px;
 }
 
 .imgWrap{
-  padding: 20px;
+  padding: 15px;
+}
+
+.title{
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2.5rem;
+}
+
+.h2{
+  font-size:1.75rem;
+}
+.h3{
+  font-size:1.25rem;
+  margin-top: 15px;
+}
+
+.btn{
+  color: black;
+  background-color: white;
+  padding: 7px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.p{
+  margin: 16px 0;
+  margin-top: 3px;
 }

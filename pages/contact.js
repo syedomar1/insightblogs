@@ -55,21 +55,22 @@ const handleChange = (e) =>{
         <form onSubmit={handleSubmit}>
           <div className={styles.mb3}>
           <label htmlFor="name" className={styles.formlabel}>Enter your Name</label>
-          <input type="text" value={name} onChange={handleChange} id="name" name="name" placeholder="Your name.." />
+          <input className={styles.input} type="text" value={name} onChange={handleChange} id="name" name="name" placeholder="Your name.." required/>
           </div>
           <div className={styles.mb3}>
           <label htmlFor="email" className={styles.formlabel}>Enter your Email address</label>
-          <input type="email" value={email} onChange={handleChange} id="email" name="email" placeholder="Your email.."/>
+          <input className={styles.input} type="email" value={email} onChange={handleChange} id="email" name="email" placeholder="Your email.." required/>
+          <div id='emailHelp' className={styles.formtext}>We'll never share your email with anyone else.</div>
           </div>
           <div className={styles.mb3}>
           <label htmlFor="phone" className={styles.formlabel}>Enter your Phone No.</label>
-          <input type="phone" value={phone} onChange={handleChange} id="phone" name="phone" placeholder="Your number.." />
+          <input className={styles.input} type="phone" value={phone} onChange={handleChange} id="phone" name="phone" placeholder="Your number.." required/>
           </div>
           <div className={styles.mb3}>
           <label htmlFor="desc" className={styles.formlabel}>Enter your Concerns</label>
-          <textarea id="desc" value={desc} onChange={handleChange} name="desc" placeholder="Elaborate your concerns.." />
+          <textarea className={styles.input} id="desc" value={desc} onChange={handleChange} name="desc" placeholder="Elaborate your concerns.." required/>
           </div>
-          <button type="submit" className="submit-button">Submit</button>
+          <button type="submit" className={styles.btn}>Submit</button>
         </form>
     </div>
   )

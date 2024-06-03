@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-    <style jsx>
+    {/* <style jsx>
       {`
       h2{
         font-size:38px;
@@ -20,7 +20,7 @@ export default function Home() {
         font-size:28px;
       }
       `}
-    </style>
+    </style> */}
     {/* <Dummy/> */}
       <Head>
         <title>Insight Blogs</title>
@@ -29,32 +29,33 @@ export default function Home() {
         <meta name="keywords" content="Next.js, InsightBlogs, coder" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Script id="exapmple-inline-script" src='' strategy="lazyOnload">
+      <Script id="example-inline-script" src='' strategy="lazyOnload">
         
       </Script>
       
       <main className={`${styles.main}`}>
-          <h1>Insights Blogs</h1>
         <div className={styles.imgWrap}>
           {/* <Image className={styles.myImg} src="/home.jpg" alt="Homeimg" width={237} height={158}/> */}
           <img className={styles.myImg} src="/home.jpg" alt="HomeImg" width={237} height={158}/>
         </div>
-          <p>
-            A blog for coders from a coder
-          </p>
+          <h1 className={styles.title}><span>&lt;InsightBlogs/&gt;</span></h1>
         <div>
-        <h2>Latest Blogs</h2>
+        <h2 className={styles.h2}>Latest Blogs</h2>
           <div className="blogItem">
-            <h3>How to learn JavaScript in 2024?</h3>
-            <p>JavaScript is the language used to design logic for the web</p>
+            <h3 className={styles.h3}>How to learn JavaScript in 2024?</h3>
+            <p className={styles.p}>JavaScript is the language used to design logic for the web</p>
+            <button className={styles.btn}>Read More</button>
+
           </div>
           <div className="blogItem">
-            <h3>How to learn JavaScript in 2024?</h3>
-            <p>JavaScript is the language used to design logic for the web</p>
+            <h3 className={styles.h3}>How to learn JavaScript in 2024?</h3>
+            <p className={styles.p}>JavaScript is the language used to design logic for the web</p>
+            <button className={styles.btn}>Read More</button>
           </div>
           <div className="blogItem">
-            <h3>How to learn JavaScript in 2024?</h3>
-            <p>JavaScript is the language used to design logic for the web</p>
+            <h3 className={styles.h3}>How to learn JavaScript in 2024?</h3>
+            <p className={styles.p}>JavaScript is the language used to design logic for the web</p>
+            <button className={styles.btn}>Read More</button>
           </div>
         </div>
       </main>

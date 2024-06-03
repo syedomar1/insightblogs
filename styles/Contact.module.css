@@ -5,8 +5,32 @@
 
 .mb3{
     margin-bottom: 21px;
+    display: flex;
+    flex-direction: column;
 }
 
 .formlabel{
-    margin: 0px 12px ;
+    padding: 7px 0px;
 }
+
+.formtext{
+    font-size: 11px;
+    color: white;
+    padding: 5px 4px;
+}
+
+.input{
+    padding: 3px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn{
+    color: black;
+    background-color: white;
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+  }
