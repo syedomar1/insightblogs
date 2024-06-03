@@ -44,7 +44,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context){
-console.log(context)
+// console.log(context)
     const {slug} = context.params;
     let myBlog = await fs.promises.readFile(`./blogdata/${slug}.json`, "utf-8");
   return{

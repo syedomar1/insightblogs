@@ -10,3 +10,9 @@
   .container {
     padding: 0 22rem;
   }
+
+  @media only screen and (max-width: 1100px){
+    .container {
+      padding: 0 1.5rem;
+    }
+  }

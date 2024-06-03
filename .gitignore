@@ -2,6 +2,7 @@
 
 # dependencies
 /blogdata
+/contactdata
 /node_modules
 /.pnp
 .pnp.js

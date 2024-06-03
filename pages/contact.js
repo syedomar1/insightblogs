@@ -21,7 +21,7 @@ const handleSubmit = (e) =>{
   })
   .then(response => response.text())
   .then(data =>{
-    console.log('Success:', data);
+    // console.log('Success:', data);
     alert("Thanks for contacting us");
     setphone('');
     setname('');
@@ -29,7 +29,7 @@ const handleSubmit = (e) =>{
     setdesc('');
   })
   .catch((error) =>{
-    console.error('Error:', error);
+    // console.error('Error:', error);
   });
 }
 
@@ -46,7 +46,7 @@ const handleChange = (e) =>{
   else if(e.target.name == 'desc'){
     setdesc(e.target.value);
   }
-  console.log(e,"change");
+  // console.log(e,"change");
 }
 
   return (
