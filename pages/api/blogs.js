@@ -1,10 +1,12 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import * as fs from 'fs';
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  // console.log(req.query.count)
+  try{
+
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    // console.log(req.query.count)
   let data = await fs.promises.readdir("blogdata");
   data = data.slice(0,parseInt(req.query.count));
   let myfile;
@@ -17,4 +19,10 @@ export default async function handler(req, res) {
     
   }
   res.status(200).json(allBlogs);
+}
+catch (error) {
+  console.error('Error fetching blog data:', error);
+  res.status(500).json({ error: "Internal server error" });
+}
+
 }
