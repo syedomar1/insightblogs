@@ -7,7 +7,7 @@ const About = () => {
       <h1 className={styles.center}>About Insight Blogs</h1>
       <h2>Introduction</h2>
       <p>
-        Welcome to Insight Blogs, your ultimate destination for in-depth articles and insights into the world of technology, programming, and software development. Our mission is to empower coders, developers, and tech enthusiasts by providing high-quality content that is both informative and engaging. Whether you're a beginner just starting out or an experienced professional looking to stay updated with the latest trends, Insight Blogs has something for everyone.
+        Welcome to Insight Blogs, your ultimate destination for in-depth articles and insights into the world of technology, programming, and software development. Our mission is to empower coders, developers, and tech enthusiasts by providing high-quality content that is both informative and engaging. Whether you are a beginner just starting out or an experienced professional looking to stay updated with the latest trends, Insight Blogs has something for everyone.
       </p>
       
       <h2>Services Offered</h2>

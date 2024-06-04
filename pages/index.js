@@ -48,13 +48,13 @@ export default function Home() {
 
           </div>
           <div className="blogItem">
-            <h3 className={styles.h3}>How to learn JavaScript in 2024?</h3>
-            <p className={styles.p}>JavaScript is the language used to design logic for the web</p>
+            <h3 className={styles.h3}>How to learn Nextjs in 2024?</h3>
+            <p className={styles.p}>Nextjs is the framework used for both frontend and backend for web applications</p>
             <button className={styles.btn}>Read More</button>
           </div>
           <div className="blogItem">
-            <h3 className={styles.h3}>How to learn JavaScript in 2024?</h3>
-            <p className={styles.p}>JavaScript is the language used to design logic for the web</p>
+            <h3 className={styles.h3}>How to learn Reactjs in 2024?</h3>
+            <p className={styles.p}>Reactjs is the library of Javascript used to design web applications</p>
             <button className={styles.btn}>Read More</button>
           </div>
         </div>

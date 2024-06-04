@@ -33,12 +33,18 @@ const [blog, setBlog] = useState(props.myBlog);
 }
 
 export async function getStaticPaths() {
+  let allb = await fs.promises.readdir(`blogdata`);
+  allb = allb.map((item)=>{
+    return {params: {slug: item.split(".")[0]}}
+  })
+  console.log(allb)
   return {
-    paths: [
-      {params: {slug: 'how-to-learn-javascript'}},
-      {params: {slug: 'how-to-learn-next.js'}},
-      {params: {slug: 'how-to-learn-react.js'}},
-    ],
+    paths: allb,
+    // [
+    //   {params: {slug: 'how-to-learn-javascript'}},
+    //   {params: {slug: 'how-to-learn-next.js'}},
+    //   {params: {slug: 'how-to-learn-react.js'}},
+    // ],
     fallback: true, // false or "blocking"
   }
 }
